@@ -1,83 +1,48 @@
 # 👋 CSharp_MERHABADUNYA1
 
-Bu proje, C# programlama diline yeni başlayanlar için hazırlanmış, klasik **"Merhaba Dünya"** uygulamasının basit bir örneğidir.
+## Türkçe
 
-Projenin temel amacı:
-1.  Bir C# projesinin temel yapısını göstermek.
-2.  Konsola bir metin çıktısı vermenin en basit yolunu sunmak.
-3.  Git ve GitHub kullanımına başlangıç yapmaktır.
+### Açıklama
+Bu proje, C# diline yeni başlayanlar için hazırlanmış klasik bir "Merhaba Dünya" (Hello World) konsol uygulamasının örnek uygulamasıdır. Amacı C# proje yapısını, temel giriş noktasını (Program.cs) ve konsola çıktı vermeyi göstermektir.
 
----
+### Özellikler
+- Konsol uygulaması
+- Basit ve açıklayıcı örnek kod
+- Hem modern (top-level statements) hem de geleneksel C# yapısını gösterebilecek içerik
 
-## 🚀 Özellikler
+### Gereksinimler
+- .NET SDK 6.0 veya daha yeni sürüm (dotnet CLI)
+- Tercihe bağlı: Visual Studio, Visual Studio Code veya başka bir IDE
 
-- 🖥️ **Konsol Uygulaması:** Çıktıyı standart konsol ekranında gösterir.
-- 💬 **Basit Çıktı:** Ekrana **"Merhaba Dünya!"** veya benzeri basit bir karşılama mesajı yazar.
-- ⚙️ **Temel Yapı:** C# `Program.cs` dosyasının minimum gereksinimlerini içerir.
+### Kurulum ve Çalıştırma
+1. Depoyu klonlayın:
+   git clone https://github.com/mhilmicicek07/CSharp_MERHABADUNYA1.git
+2. Proje dizinine girin:
+   cd CSharp_MERHABADUNYA1
+3. Uygulamayı çalıştırın:
+   dotnet run
+   veya proje dosyası belirtmek isterseniz:
+   dotnet run --project MERHABADUNYA1/MERHABADUNYA1.csproj
 
----
+Alternatif olarak Visual Studio veya VS Code ile projeyi açıp F5 tuşu ile çalıştırabilirsiniz.
 
-## 🧩 Kullanılan Teknolojiler
-
-| Teknoloji | Açıklama |
-|------------|-----------|
-| **C# (C Sharp)** | Uygulamanın yazıldığı ana dil |
-| **.NET SDK** | C# kodunu derlemek ve çalıştırmak için gerekli olan platform |
-| **Visual Studio / VS Code** | İsteğe bağlı geliştirme ortamı (IDE) |
-
----
-
-## 📂 Proje Dosya Yapısı
-
-📁 CSharp_MERHABADUNYA1 
-├── 📄 Program.cs 
-├── 📄 CSharp_MERHABADUNYA1.csproj 
-└── 📄 README.md
-
-
----
-
-## ⚙️ Kurulum ve Çalıştırma
-
-Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
-
-1. **Projeyi Klonlama:**
-   ```bash
-   git clone [https://github.com/mhilmicicek07/CSharp_MERHABADUNYA1.git](https://github.com/mhilmicicek07/CSharp_MERHABADUNYA1.git)
-    ```
-Proje Klasörüne Gitme:
-
-    ```bash
-    cd CSharp_MERHABADUNYA1
-    ```
-
-Çalıştırma: Komut satırı (CLI) üzerinden projenin ana dizinindeyken aşağıdaki komutu kullanın:
-
-    ```bash
-    dotnet run
-    ```
-Alternatif: Visual Studio veya VS Code gibi bir IDE kullanarak projeyi açıp çalıştırın (F5 tuşu).
-
-Çıktı: Ekranda aşağıdaki çıktıyı görmelisiniz:
-
+Çıktı örneği:
 Merhaba Dünya!
 
-Hepsi bu kadar! 🎉
+### Proje Dosya Yapısı (örnek)
+CSharp_MERHABADUNYA1
+├── MERHABADUNYA1.sln
+├── MERHABADUNYA1/
+│   ├── Program.cs
+│   └── MERHABADUNYA1.csproj
+└── README.md
 
-🧠 Teknik Açıklama
-Program.cs dosyası, uygulamanın giriş noktasını (Main metodu) içerir. Modern .NET sürümlerinde bu, genellikle tek satırlık bir ifadeyle özetlenir:
-
-C#
-
-// Program.cs
+### Örnek Kod
+```csharp
+// Modern .NET (top-level statements)
 Console.WriteLine("Merhaba Dünya!");
-Bu kod parçası, .NET kütüphanesindeki Console sınıfını ve WriteLine metodunu kullanarak mesajı konsola yazar.
 
-🧾 Örnek Kod Parçası
-Program.cs
-C#
-
-// Geleneksel C# yapısı:
+// Geleneksel yapı örneği:
 /*
 using System;
 
@@ -92,16 +57,156 @@ namespace CSharp_MERHABADUNYA1
     }
 }
 */
+```
 
-// Modern .NET 6+ Top Level Statements yapısı:
-Console.WriteLine("Merhaba Dünya!");
+### Yazar
+Mehmet Hilmi Çiçek — Full Stack Web Developer  
+Konum: Geislingen an der Steige
 
+### Katkıda Bulunma
+Katkılarınız memnuniyetle karşılanır. Lütfen değişiklik önerileri için issue açın veya pull request gönderin.
 
-👨‍💻 Geliştirici
-Mehmet Hilmi Çiçek 💼 Full Stack Web Developer
-📍 Geislingen an der Steige
-💬 “Basit ama tutarlı kod, karmaşık olandan her zaman üstündür.”
+### Lisans
+Bu proje açık kaynaklıdır. (Lütfen kullanılacak lisansı belirtin, örn. MIT, Apache-2.0 vb.)
 
-🪪 Lisans
-Bu proje açık kaynaklıdır.
-İsteyen herkes kodu inceleyebilir veya temel bir C# örneği olarak kullanabilir.
+---
+
+## English
+
+### Description
+This repository contains a sample "Hello World" console application written in C#, intended for beginners. The goal is to demonstrate basic C# project structure, the program entry point (Program.cs), and how to print to the console.
+
+### Features
+- Console application
+- Simple, easy-to-follow example code
+- Shows both modern top-level statements and traditional C# structure
+
+### Requirements
+- .NET SDK 6.0 or newer (dotnet CLI)
+- Optional: Visual Studio, Visual Studio Code, or other IDE
+
+### Setup & Run
+1. Clone the repository:
+   git clone https://github.com/mhilmicicek07/CSharp_MERHABADUNYA1.git
+2. Change directory:
+   cd CSharp_MERHABADUNYA1
+3. Run the app:
+   dotnet run
+   or specify project:
+   dotnet run --project MERHABADUNYA1/MERHABADUNYA1.csproj
+
+You can also open the solution in an IDE and run (F5).
+
+Example output:
+Hello World!
+
+### Project Structure (example)
+CSharp_MERHABADUNYA1
+├── MERHABADUNYA1.sln
+├── MERHABADUNYA1/
+│   ├── Program.cs
+│   └── MERHABADUNYA1.csproj
+└── README.md
+
+### Sample Code
+```csharp
+// Modern .NET (top-level statements)
+Console.WriteLine("Hello World!");
+
+// Traditional structure example:
+/*
+using System;
+
+namespace CSharp_MERHABADUNYA1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+*/
+```
+
+### Author
+Mehmet Hilmi Çiçek — Full Stack Web Developer  
+Location: Geislingen an der Steige
+
+### Contributing
+Contributions are welcome — please open an issue or submit a pull request.
+
+### License
+This project is open source. (Please specify a license such as MIT or Apache-2.0.)
+
+---
+
+## Deutsch
+
+### Beschreibung
+Dieses Repository enthält eine Beispiel-"Hello World"-Konsolenanwendung in C#, die sich an Einsteiger richtet. Ziel ist es, die grundlegende Projektstruktur von C#, den Programm-Einstiegspunkt (Program.cs) und das Schreiben von Ausgaben in die Konsole zu zeigen.
+
+### Merkmale
+- Konsolenanwendung
+- Einfacher, leicht verständlicher Beispielcode
+- Zeigt moderne Top-Level-Statements sowie traditionelle C#-Struktur
+
+### Voraussetzungen
+- .NET SDK 6.0 oder neuer (dotnet CLI)
+- Optional: Visual Studio, Visual Studio Code oder eine andere IDE
+
+### Installation & Ausführung
+1. Repository klonen:
+   git clone https://github.com/mhilmicicek07/CSharp_MERHABADUNYA1.git
+2. In das Verzeichnis wechseln:
+   cd CSharp_MERHABADUNYA1
+3. Anwendung starten:
+   dotnet run
+   oder Projekt angeben:
+   dotnet run --project MERHABADUNYA1/MERHABADUNYA1.csproj
+
+Sie können die Lösung auch in einer IDE öffnen und starten (F5).
+
+Beispielausgabe:
+Hallo Welt!
+
+### Projektstruktur (Beispiel)
+CSharp_MERHABADUNYA1
+├── MERHABADUNYA1.sln
+├── MERHABADUNYA1/
+│   ├── Program.cs
+│   └── MERHABADUNYA1.csproj
+└── README.md
+
+### Beispielcode
+```csharp
+// Modern .NET (Top-Level-Statements)
+Console.WriteLine("Hallo Welt!");
+
+// Traditionelle Struktur Beispiel:
+/*
+using System;
+
+namespace CSharp_MERHABADUNYA1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hallo Welt!");
+        }
+    }
+}
+*/
+```
+
+### Autor
+Mehmet Hilmi Çiçek — Full Stack Web Developer  
+Ort: Geislingen an der Steige
+
+### Mitwirken
+Beiträge sind willkommen — bitte öffnen Sie ein Issue oder senden Sie einen Pull Request.
+
+### Lizenz
+Dieses Projekt ist Open Source. (Bitte geben Sie eine Lizenz an, z. B. MIT oder Apache-2.0.)
