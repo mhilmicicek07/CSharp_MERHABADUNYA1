@@ -3,60 +3,50 @@
 ## Türkçe
 
 ### Açıklama
-Bu proje, C# diline yeni başlayanlar için hazırlanmış klasik bir "Merhaba Dünya" (Hello World) konsol uygulamasının örnek uygulamasıdır. Amacı C# proje yapısını, temel giriş noktasını (Program.cs) ve konsola çıktı vermeyi göstermektir.
+Bu depo, tek bir düğmeye tıklayınca `Merhaba Dünya :)` mesaj kutusu gösteren basit bir Windows Forms uygulamasıdır. Amaç WinForms giriş noktasını (Program.cs), form tasarımını (Form1.Designer.cs) ve olay tabanlı buton kullanımı örneğini göstermektir.
 
 ### Özellikler
-- Konsol uygulaması
-- Basit ve açıklayıcı örnek kod
-- Hem modern (top-level statements) hem de geleneksel C# yapısını gösterebilecek içerik
+- .NET Framework 4.7.2 hedefleyen Windows Forms uygulaması
+- Tek düğmeli arayüz, merkezde açılan pencere
+- `Merhaba Dünya :)` içerikli mesaj kutusu (başlık: `Selam`)
 
 ### Gereksinimler
-- .NET SDK 6.0 veya daha yeni sürüm (dotnet CLI)
-- Tercihe bağlı: Visual Studio, Visual Studio Code veya başka bir IDE
+- Windows işletim sistemi
+- .NET Framework 4.7.2 Developer Pack veya Windows üzerinde .NET SDK
+- Tercihen Visual Studio (Windows Desktop development workload yüklü)
 
 ### Kurulum ve Çalıştırma
 1. Depoyu klonlayın:
    git clone https://github.com/mhilmicicek07/CSharp_MERHABADUNYA1.git
 2. Proje dizinine girin:
    cd CSharp_MERHABADUNYA1
-3. Uygulamayı çalıştırın:
-   dotnet run
-   veya proje dosyası belirtmek isterseniz:
-   dotnet run --project MERHABADUNYA1/MERHABADUNYA1.csproj
+3. Visual Studio ile çalıştırma:
+   - MERHABADUNYA1.sln dosyasını açın.
+   - F5 veya “Start” ile uygulamayı başlatın.
+4. Komut satırı ile (Windows):
+   - dotnet build MERHABADUNYA1/MERHABADUNYA1.csproj
+   - bin/Debug/MERHABADUNYA1.exe dosyasını çalıştırın.
 
-Alternatif olarak Visual Studio veya VS Code ile projeyi açıp F5 tuşu ile çalıştırabilirsiniz.
+Beklenen davranış: Pencere açılır, “Lütfen Tıklayın” butonuna bastığınızda “Merhaba Dünya :)” mesaj kutusu görünür.
 
-Çıktı örneği:
-Merhaba Dünya!
-
-### Proje Dosya Yapısı (örnek)
+### Proje Dosya Yapısı
 CSharp_MERHABADUNYA1
 ├── MERHABADUNYA1.sln
 ├── MERHABADUNYA1/
+│   ├── App.config
+│   ├── Form1.cs
+│   ├── Form1.Designer.cs
+│   ├── Form1.resx
 │   ├── Program.cs
 │   └── MERHABADUNYA1.csproj
 └── README.md
 
 ### Örnek Kod
 ```csharp
-// Modern .NET (top-level statements)
-Console.WriteLine("Merhaba Dünya!");
-
-// Geleneksel yapı örneği:
-/*
-using System;
-
-namespace CSharp_MERHABADUNYA1
+private void button1_Click(object sender, EventArgs e)
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Merhaba Dünya!");
-        }
-    }
+    MessageBox.Show("Merhaba Dünya :)", "Selam");
 }
-*/
 ```
 
 ### Yazar
@@ -74,60 +64,50 @@ Bu proje açık kaynaklıdır. (Lütfen kullanılacak lisansı belirtin, örn. M
 ## English
 
 ### Description
-This repository contains a sample "Hello World" console application written in C#, intended for beginners. The goal is to demonstrate basic C# project structure, the program entry point (Program.cs), and how to print to the console.
+This repository is a minimal Windows Forms app: clicking the single button shows a `Merhaba Dünya :)` message box. It demonstrates the WinForms entry point (Program.cs), form design file (Form1.Designer.cs), and a simple button click handler.
 
 ### Features
-- Console application
-- Simple, easy-to-follow example code
-- Shows both modern top-level statements and traditional C# structure
+- Windows Forms app targeting .NET Framework 4.7.2
+- Single-button UI, centered window
+- Message box text `Merhaba Dünya :)` with caption `Selam`
 
 ### Requirements
-- .NET SDK 6.0 or newer (dotnet CLI)
-- Optional: Visual Studio, Visual Studio Code, or other IDE
+- Windows OS
+- .NET Framework 4.7.2 Developer Pack or .NET SDK on Windows
+- Preferably Visual Studio with the Windows Desktop workload
 
 ### Setup & Run
 1. Clone the repository:
    git clone https://github.com/mhilmicicek07/CSharp_MERHABADUNYA1.git
 2. Change directory:
    cd CSharp_MERHABADUNYA1
-3. Run the app:
-   dotnet run
-   or specify project:
-   dotnet run --project MERHABADUNYA1/MERHABADUNYA1.csproj
+3. Run with Visual Studio:
+   - Open MERHABADUNYA1.sln
+   - Press F5 / Start
+4. Run from CLI on Windows:
+   - dotnet build MERHABADUNYA1/MERHABADUNYA1.csproj
+   - Launch bin/Debug/MERHABADUNYA1.exe
 
-You can also open the solution in an IDE and run (F5).
+Expected behavior: a window opens; clicking “Lütfen Tıklayın” shows the “Merhaba Dünya :)” message box.
 
-Example output:
-Hello World!
-
-### Project Structure (example)
+### Project Structure
 CSharp_MERHABADUNYA1
 ├── MERHABADUNYA1.sln
 ├── MERHABADUNYA1/
+│   ├── App.config
+│   ├── Form1.cs
+│   ├── Form1.Designer.cs
+│   ├── Form1.resx
 │   ├── Program.cs
 │   └── MERHABADUNYA1.csproj
 └── README.md
 
 ### Sample Code
 ```csharp
-// Modern .NET (top-level statements)
-Console.WriteLine("Hello World!");
-
-// Traditional structure example:
-/*
-using System;
-
-namespace CSharp_MERHABADUNYA1
+private void button1_Click(object sender, EventArgs e)
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+    MessageBox.Show("Merhaba Dünya :)", "Selam");
 }
-*/
 ```
 
 ### Author
@@ -145,60 +125,50 @@ This project is open source. (Please specify a license such as MIT or Apache-2.0
 ## Deutsch
 
 ### Beschreibung
-Dieses Repository enthält eine Beispiel-"Hello World"-Konsolenanwendung in C#, die sich an Einsteiger richtet. Ziel ist es, die grundlegende Projektstruktur von C#, den Programm-Einstiegspunkt (Program.cs) und das Schreiben von Ausgaben in die Konsole zu zeigen.
+Dieses Repository zeigt eine minimalistische Windows-Forms-App: Beim Klick auf den einzigen Button erscheint eine `Merhaba Dünya :)`-Meldung. Es demonstriert den WinForms-Einstiegspunkt (Program.cs), die Form-Designer-Datei (Form1.Designer.cs) und einen einfachen Button-Click-Handler.
 
 ### Merkmale
-- Konsolenanwendung
-- Einfacher, leicht verständlicher Beispielcode
-- Zeigt moderne Top-Level-Statements sowie traditionelle C#-Struktur
+- Windows-Forms-Anwendung für .NET Framework 4.7.2
+- Ein Button, zentriertes Fenster
+- Meldungsfenstertext `Merhaba Dünya :)` mit Titel `Selam`
 
 ### Voraussetzungen
-- .NET SDK 6.0 oder neuer (dotnet CLI)
-- Optional: Visual Studio, Visual Studio Code oder eine andere IDE
+- Windows-Betriebssystem
+- .NET Framework 4.7.2 Developer Pack oder .NET SDK unter Windows
+- Empfehlenswert: Visual Studio mit Windows Desktop workload
 
 ### Installation & Ausführung
 1. Repository klonen:
    git clone https://github.com/mhilmicicek07/CSharp_MERHABADUNYA1.git
 2. In das Verzeichnis wechseln:
    cd CSharp_MERHABADUNYA1
-3. Anwendung starten:
-   dotnet run
-   oder Projekt angeben:
-   dotnet run --project MERHABADUNYA1/MERHABADUNYA1.csproj
+3. Aus Visual Studio starten:
+   - MERHABADUNYA1.sln öffnen
+   - F5 / Start drücken
+4. Über die Kommandozeile (Windows):
+   - dotnet build MERHABADUNYA1/MERHABADUNYA1.csproj
+   - bin/Debug/MERHABADUNYA1.exe ausführen
 
-Sie können die Lösung auch in einer IDE öffnen und starten (F5).
+Erwartetes Verhalten: Ein Fenster öffnet sich; beim Klick auf „Lütfen Tıklayın“ erscheint die Meldung „Merhaba Dünya :)“.
 
-Beispielausgabe:
-Hallo Welt!
-
-### Projektstruktur (Beispiel)
+### Projektstruktur
 CSharp_MERHABADUNYA1
 ├── MERHABADUNYA1.sln
 ├── MERHABADUNYA1/
+│   ├── App.config
+│   ├── Form1.cs
+│   ├── Form1.Designer.cs
+│   ├── Form1.resx
 │   ├── Program.cs
 │   └── MERHABADUNYA1.csproj
 └── README.md
 
 ### Beispielcode
 ```csharp
-// Modern .NET (Top-Level-Statements)
-Console.WriteLine("Hallo Welt!");
-
-// Traditionelle Struktur Beispiel:
-/*
-using System;
-
-namespace CSharp_MERHABADUNYA1
+private void button1_Click(object sender, EventArgs e)
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hallo Welt!");
-        }
-    }
+    MessageBox.Show("Merhaba Dünya :)", "Selam");
 }
-*/
 ```
 
 ### Autor
