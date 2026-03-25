@@ -40,7 +40,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(345, 118);
             this.button1.TabIndex = 0;
-            this.button1.Text = "LUTFEN TIKLAYIN";
+            this.button1.Text = "Lütfen Tıklayın";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -52,7 +52,8 @@
             this.ClientSize = new System.Drawing.Size(587, 283);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "ILK KOD";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "İlk Kod";
             this.ResumeLayout(false);
 
         }
@@ -62,4 +63,3 @@
         private System.Windows.Forms.Button button1;
     }
 }
-
