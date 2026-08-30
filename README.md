@@ -38,7 +38,13 @@ CSharp_MERHABADUNYA1
 │   ├── Form1.Designer.cs
 │   ├── Form1.resx
 │   ├── Program.cs
-│   └── MERHABADUNYA1.csproj
+│   ├── MERHABADUNYA1.csproj
+│   └── Properties/
+│       ├── AssemblyInfo.cs
+│       ├── Resources.Designer.cs
+│       ├── Resources.resx
+│       ├── Settings.Designer.cs
+│       └── Settings.settings
 └── README.md
 
 ### Örnek Kod
@@ -99,7 +105,13 @@ CSharp_MERHABADUNYA1
 │   ├── Form1.Designer.cs
 │   ├── Form1.resx
 │   ├── Program.cs
-│   └── MERHABADUNYA1.csproj
+│   ├── MERHABADUNYA1.csproj
+│   └── Properties/
+│       ├── AssemblyInfo.cs
+│       ├── Resources.Designer.cs
+│       ├── Resources.resx
+│       ├── Settings.Designer.cs
+│       └── Settings.settings
 └── README.md
 
 ### Sample Code
@@ -160,7 +172,13 @@ CSharp_MERHABADUNYA1
 │   ├── Form1.Designer.cs
 │   ├── Form1.resx
 │   ├── Program.cs
-│   └── MERHABADUNYA1.csproj
+│   ├── MERHABADUNYA1.csproj
+│   └── Properties/
+│       ├── AssemblyInfo.cs
+│       ├── Resources.Designer.cs
+│       ├── Resources.resx
+│       ├── Settings.Designer.cs
+│       └── Settings.settings
 └── README.md
 
 ### Beispielcode
